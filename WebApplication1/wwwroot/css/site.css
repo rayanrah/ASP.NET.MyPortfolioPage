@@ -1,0 +1,74 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Class for Two Sections with Text to Left and Image to Right */
+.TwoSection-TextImage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 2400px;
+    padding: 20px;
+}
+
+.text {
+    flex-basis: 60%;
+    margin-right: 20px;
+}
+
+.photo {
+    flex-basis: 35%;
+}
+
+    .photo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+blockquote {
+    font-size: 1.2em;
+    font-style:italic;
+    margin: 1.5em 0;
+    padding: 0.5em 1em;
+    border-left: 0.5em solid #ccc;
+}
+
+.text-background {
+    background-color: #d9d2e9;
+}
+
+
+#header-page {
+    background-color: #d9d2e9;
+    width: 100%;
+    height: 100%; /* set height to full viewport height */
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative; /* changed from absolute to relative */
+    
+}
+
+.background-headline {
+    padding: 20px; /* add some padding to the headline div */
+}

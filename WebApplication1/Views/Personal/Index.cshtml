@@ -1,0 +1,57 @@
+﻿@using MY_PORTFOLIO.Models
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model PersonalVM
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal</title>
+</head>
+<body>
+
+    <section>
+        <h1 class="display-4">Personal Information</h1>
+    </section>
+
+    <form asp-controller="personal" asp-action="ShowPersonal" method="post">
+         
+        <label asp-for="@Model.ID"> </label>
+        <br />
+        <input asp-for="@Model.ID"></input>
+        <br />
+        <label asp-for="@Model.Name"> </label>
+        <br />
+        <input asp-for="@Model.Name"></input>
+        <br />
+        <label asp-for="@Model.SurName"> </label>
+        <br />
+        <input asp-for="@Model.SurName"></input>
+        <br />
+        <label asp-for="@Model.City"> </label>
+        <br />
+        <input asp-for="@Model.City"></input>
+        <br />
+        <label asp-for="@Model.Country"> </label>
+        <br />
+        <input asp-for="@Model.Country"></input>
+        <br />
+        <input type="submit" value="Send" />
+
+
+    </form>
+
+
+
+
+
+
+
+</body>
+</html>
